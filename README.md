@@ -29,3 +29,8 @@ Blockchain Framework: Implementing a distributed ledger for server security.
 Cryptographic Algorithms: For securing data and transactions.
 
 Smart Contracts: To automate and enforce security policies.
+
+Architecture:
+
+![Screenshot 2024-07-30 133615](https://github.com/user-attachments/assets/38e60f65-95cd-4740-afb9-85798f28b36d)
+
