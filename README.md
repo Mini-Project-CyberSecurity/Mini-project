@@ -4,7 +4,7 @@ In today’s digital landscape, cloud computing has become the backbone of moder
 Blockchain technology offers a revolutionary solution to these challenges by introducing decentralized, tamper-proof, and transparent systems. In a blockchain-enabled environment, data and processes are distributed across multiple nodes, eliminating reliance on a single entity and reducing the risks of centralized failures. The use of cryptographic techniques, consensus mechanisms, and immutable records provides a robust layer of security, ensuring data integrity and protecting sensitive information.
 
 ## Objective
-The goal of this project is to overcome the challenges associated with centralized image storage and sharing by developing a Decentralized Image Upload and Sharing System using blockchain technology. The key issues addressed are:
+The goal of this project is to overcome the challenges associated with centralized image storage and sharing by developing a **Decentralized Image Upload and Sharing System** using blockchain technology. The key issues addressed are:
 
 - **Security Risks**:Centralized services are prone to data breaches and unauthorized access. Decentralizing storage with IPFS and using blockchain for access control ensures secure, tamper-resistant storage.
 
