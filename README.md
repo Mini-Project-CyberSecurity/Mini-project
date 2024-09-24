@@ -6,13 +6,13 @@ Blockchain technology offers a revolutionary solution to these challenges by int
 ## Objective
 The goal of this project is to overcome the challenges associated with centralized image storage and sharing by developing a Decentralized Image Upload and Sharing System using blockchain technology. The key issues addressed are:
 
-Security Risks: Centralized services are prone to data breaches and unauthorized access. Decentralizing storage with IPFS and using blockchain for access control ensures secure, tamper-resistant storage.
+**Security Risks**:Centralized services are prone to data breaches and unauthorized access. Decentralizing storage with IPFS and using blockchain for access control ensures secure, tamper-resistant storage.
 
-Loss of User Control: Traditional cloud services require users to trust third-party providers with their data. Our system gives users complete control over who can access their images through blockchain-based smart contracts.
+**Loss of User Control**: Traditional cloud services require users to trust third-party providers with their data. Our system gives users complete control over who can access their images through blockchain-based smart contracts.
 
-Lack of Transparency: Centralized platforms lack transparency. By using blockchain, all transactions related to image uploads and access control are verifiable, creating an immutable audit trail that fosters trust.
+**Lack of Transparency**: Centralized platforms lack transparency. By using blockchain, all transactions related to image uploads and access control are verifiable, creating an immutable audit trail that fosters trust.
 
-Centralized Failures: Reliance on a single server can result in outages. With IPFS and blockchain, the system is decentralized and resilient, ensuring continuous availability even in case of node failures.
+**Centralized Failures**: Reliance on a single server can result in outages. With IPFS and blockchain, the system is decentralized and resilient, ensuring continuous availability even in case of node failures.
 
 This project provides a secure, transparent, and user-controlled alternative to traditional cloud-based storage solutions.
 
