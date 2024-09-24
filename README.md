@@ -1,6 +1,7 @@
 
 # Server Security in Cloud Computing using Block Chaining Technique 
-This project focuses on enhancing server security in cloud computing environments by leveraging blockchain technology. Cloud computing provides scalable and flexible infrastructure, but it also introduces security vulnerabilities such as data breaches, unauthorized access, and cyber-attacks. This project addresses these challenges by implementing a decentralized security model through block chaining.
+Cloud computing offers convenience but poses security risks due to centralized data storage. 
+Blockchain addresses these challenges by providing decentralized, tamper-proof, and secure systems, ensuring data integrity and protection through cryptographic techniques and consensus mechanisms.
 
 ## Objective:
 Strengthen cloud server security by utilizing blockchain's decentralized and immutable structure.
