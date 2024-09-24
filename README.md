@@ -6,26 +6,38 @@ Blockchain technology offers a revolutionary solution to these challenges by int
 ## Objective
 The goal of this project is to overcome the challenges associated with centralized image storage and sharing by developing a Decentralized Image Upload and Sharing System using blockchain technology. The key issues addressed are:
 
-**Security Risks**:Centralized services are prone to data breaches and unauthorized access. Decentralizing storage with IPFS and using blockchain for access control ensures secure, tamper-resistant storage.
+- **Security Risks**:Centralized services are prone to data breaches and unauthorized access. Decentralizing storage with IPFS and using blockchain for access control ensures secure, tamper-resistant storage.
 
-**Loss of User Control**: Traditional cloud services require users to trust third-party providers with their data. Our system gives users complete control over who can access their images through blockchain-based smart contracts.
++ **Loss of User Control**: Traditional cloud services require users to trust third-party providers with their data. Our system gives users complete control over who can access their images through blockchain-based smart contracts.
 
-**Lack of Transparency**: Centralized platforms lack transparency. By using blockchain, all transactions related to image uploads and access control are verifiable, creating an immutable audit trail that fosters trust.
+- **Lack of Transparency**: Centralized platforms lack transparency. By using blockchain, all transactions related to image uploads and access control are verifiable, creating an immutable audit trail that fosters trust.
 
-**Centralized Failures**: Reliance on a single server can result in outages. With IPFS and blockchain, the system is decentralized and resilient, ensuring continuous availability even in case of node failures.
++ **Centralized Failures**: Reliance on a single server can result in outages. With IPFS and blockchain, the system is decentralized and resilient, ensuring continuous availability even in case of node failures.
 
 This project provides a secure, transparent, and user-controlled alternative to traditional cloud-based storage solutions.
 
+## Architecture
+- **Blockchain Network**: Ethereum blockchain is used to deploy smart contracts developed in Solidity. The blockchain ensures decentralized management of image ownership and access control.
+- **IPFS (InterPlanetary File System)**: Decentralized and immutable storage of images. Images are uploaded to IPFS, and their hash is stored on the blockchain.
+- **Smart Contracts**: Implemented in Solidity to handle image ownership and permission management. Users can grant or revoke access to specific individuals.
+- **Frontend**: Built using React for user interaction. Users can upload images and manage access controls through the interface.
+
+## Functionality Overview:
+- **Upload Image**: Users upload images through the React frontend. These images are stored on IPFS, and the corresponding hash is recorded on the blockchain.
+- **Grant Access**: Image owners can specify users who are allowed access to view/download the image.
+- **Revoke Access**: Owners can also revoke access at any point through the smart contract.
+- **Immutable Records**: Every action is recorded on the Ethereum blockchain, ensuring transparency and security.
+
+## Implementation
+- **Solidity**: Smart contracts are developed to manage access control, ensuring only authorized users can access the images.
+ **React**: The frontend is developed in React, where users can interact with the system to upload images and manage access.
+- **IPFS**: Used to store images in a decentralized manner. Once uploaded, an IPFS hash is generated and stored in the blockchain.
+- **Metamask Integration**: For interaction with the Ethereum blockchain, enabling users to connect their wallets and perform transactions.
+
 ## Key Features:
-Decentralized Security: Blockchain creates a distributed ledger across multiple servers, ensuring transparency and minimizing the risk of a single point of failure.
-
-Data Integrity: Each block in the chain contains cryptographic hashes of the previous blocks, making it nearly impossible to alter or tamper with the data stored on the server.
-
-Access Control: Blockchain enables a secure authentication mechanism, where user identities are verified, and access permissions are recorded immutably.
-
-Traceability: Every transaction and interaction is recorded on the blockchain, providing a complete audit trail that helps in identifying and preventing unauthorized activities.
-
-Resilience to Attacks: Blockchain's consensus mechanism ensures that even if some nodes in the network are compromised, the integrity of the data remains intact.
+- **Decentralized Storage**: Images stored on IPFS ensure no central authority has control over them.
+- **Smart Contract-Based Access Control**: Users can manage who has access to their images through Ethereum smart contracts.
+- **Transparency**: Every action is recorded on the blockchain, providing a tamper-proof record of transactions.
 
 
 ## Technologies Used:
