@@ -42,15 +42,11 @@ This project provides a secure, transparent, and user-controlled alternative to 
 - **Transparency**: Every action is recorded on the blockchain, providing a tamper-proof record of transactions.
 
 
-## Technologies Used:
-Cloud Computing Platform: To simulate server environments.
+## Technologies Used
+- **Solidity**: For writing smart contracts that manage image ownership and access control.
+- **React**: For building the frontend interface to allow users to upload images and manage permissions.
+- **IPFS**: For decentralized image storage.
+- **Metamask**: For blockchain wallet integration.
 
-Blockchain Framework: Implementing a distributed ledger for server security.
-
-Cryptographic Algorithms: For securing data and transactions.
-
-Smart Contracts: To automate and enforce security policies.
-
-## Architecture:
 
 
