@@ -22,6 +22,8 @@ This project provides a secure, transparent, and user-controlled alternative to 
 - **Smart Contracts**: Implemented in Solidity to handle image ownership and permission management. Users can grant or revoke access to specific individuals.
 - **Frontend**: Built using React for user interaction. Users can upload images and manage access controls through the interface.
 
+![Screenshot 2024-07-30 133615](https://github.com/user-attachments/assets/38e60f65-95cd-4740-afb9-85798f28b36d)
+
 ## Functionality Overview:
 - **Upload Image**: Users upload images through the React frontend. These images are stored on IPFS, and the corresponding hash is recorded on the blockchain.
 - **Grant Access**: Image owners can specify users who are allowed access to view/download the image.
@@ -51,5 +53,4 @@ Smart Contracts: To automate and enforce security policies.
 
 ## Architecture:
 
-![Screenshot 2024-07-30 133615](https://github.com/user-attachments/assets/38e60f65-95cd-4740-afb9-85798f28b36d)
 
