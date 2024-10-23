@@ -9,19 +9,75 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Uploaded Files</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      .container {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #00ffff;
+      }
+
+      .file-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+      }
+
+      .file-item:last-child {
+        border-bottom: none;
+      }
+
+      .file-icon {
+        margin-right: 10px;
+        font-size: 24px;
+        color: #00ffff;
+      }
+
+      .btn-danger {
+        background-color: #ff4d4d;
+        border: none;
+      }
+
+      .btn-danger:hover {
+        background-color: #ff1a1a;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container mt-5">
       <h1>Uploaded Files</h1>
 
       <% if (files.length === 0) { %>
-      <p>No files uploaded.</p>
+      <p class="text-center">No files uploaded.</p>
       <% } else { %>
-      <ul>
+      <div>
         <% files.forEach(file => { %>
-        <li>
-          <%= file.filename %>
+        <div class="file-item">
+          <div>
+            <span class="file-icon">&#128196;</span>
+            <%= file.filename %>
+          </div>
           <form
             method="POST"
             action="/delete/<%= file.filename %>"
@@ -29,9 +85,9 @@
           >
             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
           </form>
-        </li>
+        </div>
         <% }); %>
-      </ul>
+      </div>
       <% } %>
 
       <a href="/dashboard" class="btn btn-primary mt-3">Go back to Dashboard</a>
