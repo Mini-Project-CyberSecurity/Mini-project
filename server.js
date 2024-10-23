@@ -261,10 +261,10 @@ app.post("/upload", isLogin, upload.single("file"), async (req, res) => {
   // Create a new file record
   const newFile = new File({
     filename: req.file.filename,
-    userId: req.user._id, // Associate the file with the logged-in user
+    userId: req.user._id,
   })
 
-  await newFile.save() // Save the file metadata to the database
+  await newFile.save()
 
   req.flash("success", "File uploaded successfully.")
   res.redirect("/dashboard")
