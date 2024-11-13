@@ -1,4 +1,4 @@
-# Server Security in Cloud Computing using Block Chaining Technique 
+# Kubernates Monitoring Using Monitoring Prometheus and Grafana
 In today’s digital landscape, cloud computing has become the backbone of modern applications and data storage. However, with its growing adoption comes increasing concerns about security, particularly in ensuring the integrity, confidentiality, and availability of data stored on centralized cloud servers. Traditional cloud architectures often rely on single points of failure, making them vulnerable to breaches, data tampering, and unauthorized access.
 
 Blockchain technology offers a revolutionary solution to these challenges by introducing decentralized, tamper-proof, and transparent systems. In a blockchain-enabled environment, data and processes are distributed across multiple nodes, eliminating reliance on a single entity and reducing the risks of centralized failures. The use of cryptographic techniques, consensus mechanisms, and immutable records provides a robust layer of security, ensuring data integrity and protecting sensitive information.
