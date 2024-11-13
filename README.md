@@ -43,12 +43,12 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 ```bash
 helm repo update
 ```
-##Install Prometheus on the Cluster:
+## Install Prometheus on the Cluster:
 ```bash
 helm install prometheus prometheus-community/prometheus --namespace monitoring
 
 ```
-##Expose Prometheus Service:
+## Expose Prometheus Service:
 
 To access Prometheus externally, convert the prometheus-server service to NodePort:
 ```bash
@@ -69,6 +69,10 @@ Convert the Grafana service to NodePort:
 kubectl expose service grafana --namespace monitoring --type=NodePort --target-port=3000 --name=grafana-ext
 ```
 
+## Configuring Prometheus as a Grafana Data Source
+# Creating Dashboards
 
+## Future Enhancements
+The project can be extended with Prometheus-kube-state-metrics to expose additional Kubernetes metrics, including details on deployments, replicas, and services. This will be covered in the next phase of this project.
 
 
