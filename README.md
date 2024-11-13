@@ -5,8 +5,8 @@ This project provides step-by-step instructions for setting up a monitoring solu
 With multiple environments like development, staging, and production, managing Kubernetes clusters efficiently requires robust monitoring tools. This project implements monitoring with Prometheus and Grafana to track cluster health and services, enabling rapid issue diagnosis and observability for Kubernetes environments.
 
  ## Prerequisites
-**Kubernetes Cluster (using Minikube in this guide)**
-**Helm CLI for managing deployments on the Kubernetes cluster**
+- **Kubernetes Cluster (using Minikube in this guide)**
+- **Helm CLI for managing deployments on the Kubernetes cluster**
 
 
 
