@@ -54,6 +54,8 @@ To access Prometheus externally, convert the prometheus-server service to NodePo
 ```bash
 kubectl expose service prometheus-server --namespace monitoring --type=NodePort --target-port=9090 --name=prometheus-server-ext
 ```
+![Screenshot_2024-11-13_10_31_41](https://github.com/user-attachments/assets/35d2a89a-34d8-440c-88f1-44223a6bd553)
+
 ## Install Grafana
 Add the Grafana Helm Chart Repository:
 ```bash
@@ -71,6 +73,8 @@ kubectl expose service grafana --namespace monitoring --type=NodePort --target-p
 
 ## Configuring Prometheus as a Grafana Data Source
 # Creating Dashboards
+
+![Screenshot_2024-11-13_11_16_27](https://github.com/user-attachments/assets/dc3867c8-6377-420f-9447-4646cb45c741)
 
 ## Future Enhancements
 The project can be extended with Prometheus-kube-state-metrics to expose additional Kubernetes metrics, including details on deployments, replicas, and services. This will be covered in the next phase of this project.
