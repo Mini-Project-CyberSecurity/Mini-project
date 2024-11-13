@@ -24,4 +24,51 @@ To launch a Minikube cluster:
 
 ```bash
 minikube start
+```
+## Install Helm
+Helm is required to deploy Prometheus and Grafana. Install it via:
+```bash
+brew install helm
+```
+## Install Kubectl
+```bash
+   curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+## Install Prometheus
+Add the Prometheus Helm Chart Repository:
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+```
+## Update Helm Repositories: 
+```bash
+helm repo update
+```
+##Install Prometheus on the Cluster:
+```bash
+helm install prometheus prometheus-community/prometheus --namespace monitoring
+
+```
+##Expose Prometheus Service:
+
+To access Prometheus externally, convert the prometheus-server service to NodePort:
+```bash
+kubectl expose service prometheus-server --namespace monitoring --type=NodePort --target-port=9090 --name=prometheus-server-ext
+```
+## Install Grafana
+Add the Grafana Helm Chart Repository:
+```bash
+helm repo add grafana https://grafana.github.io/helm-charts
+```
+## Install Grafana on the Cluster
+```bash
+helm install grafana grafana/grafana --namespace monitoring
+```
+## Expose Grafana Service:
+Convert the Grafana service to NodePort:
+```bash
+kubectl expose service grafana --namespace monitoring --type=NodePort --target-port=3000 --name=grafana-ext
+```
+
+
+
 
