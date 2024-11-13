@@ -8,8 +8,6 @@ With multiple environments like development, staging, and production, managing K
 - **Kubernetes Cluster (using Minikube in this guide)**
 - **Helm CLI for managing deployments on the Kubernetes cluster**
 
-
-
-
-
+## Architecture Overview
+The solution architecture involves deploying Prometheus and Grafana on a Kubernetes cluster using Helm charts. Metrics are scraped by Prometheus, and Grafana is configured as a data source to visualize these metrics, including custom dashboards for detailed insights.
 
