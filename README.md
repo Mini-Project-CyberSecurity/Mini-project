@@ -1,4 +1,4 @@
-# Monitoring Kuberentes Cluster wuth eBPF
+# Monitoring Kuberentes Cluster with eBPF
 This project provides step-by-step instructions for setting up a monitoring solution for a Kubernetes cluster using eBPF . It covers the installation of Prometheus and Grafana via Helm, configuration of monitoring namespaces and services, and the creation of dashboards to visualize cluster metrics.
 
 ## Introduction
